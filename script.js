@@ -1,4 +1,4 @@
-var todos = ["Shopping List"];
+var todos = ["Weekly To Do List"];
 
 var input = prompt("What Would You Like To Do?");
 
@@ -19,6 +19,7 @@ while(input !== "quit"){
 		var newTodo = prompt("Enter new todo");
 		//add to todos array
 		todos.push(newTodo);
+		console.log("Added Todo");
 	
 
 	}	else if(input === "delete"){
@@ -27,6 +28,7 @@ while(input !== "quit"){
 		//delete that todo
 		//splice () which is how many items after the index do we want to delete?
 		todos.splice(index,1);
+		console.log("Deleted Todo");
 	}
 		//ask again for new input
 		input = prompt("What Would You Like To Do?")
